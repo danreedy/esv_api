@@ -33,7 +33,7 @@ module ESV
       end
       
       if ESV.should_cache?
-        @dc = Dalli::Client.new('localhost:11211')
+        @dc = Dalli::Client.new
       end
     end
     
